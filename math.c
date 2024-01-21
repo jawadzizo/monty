@@ -61,7 +61,7 @@ void divide(stack_t **stack, unsigned int line_number)
 
 	if (global.size < 2)
 	{
-		fprintf(stderr, "L%i: can't add, stack too short\n", line_number);
+		fprintf(stderr, "L%i: can't div, stack too short\n", line_number);
 		free_stack();
 		exit(EXIT_FAILURE);
 	}
@@ -93,7 +93,7 @@ void mod(stack_t **stack, unsigned int line_number)
 
 	if (global.size < 2)
 	{
-		fprintf(stderr, "L%i: can't add, stack too short\n", line_number);
+		fprintf(stderr, "L%i: can't mod, stack too short\n", line_number);
 		free_stack();
 		exit(EXIT_FAILURE);
 	}
@@ -125,7 +125,7 @@ void sub(stack_t **stack, unsigned int line_number)
 
 	if (global.size < 2)
 	{
-		fprintf(stderr, "L%i: can't add, stack too short\n", line_number);
+		fprintf(stderr, "L%i: can't sub, stack too short\n", line_number);
 		free_stack();
 		exit(EXIT_FAILURE);
 	}
