@@ -113,9 +113,12 @@ int set_opcode(char **ptr)
  */
 int _isnum(char *str, int len)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < len; i++)
+	if (str[0] == '-')
+		i++;
+
+	for (; i < len; i++)
 	{
 		if (str[i] > '9' || str[i] < '0')
 			return (-1);
